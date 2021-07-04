@@ -9,10 +9,8 @@ public class LinkedList<T> {
     public Node<T> currentHead;
     public Node<T> current;
     private int size;
-
     public void insert(T data) {
         Node<T> newNode = new Node<>(data);
-
         if (this.head == null) {
             this.head = newNode;
         }
@@ -24,25 +22,73 @@ public class LinkedList<T> {
             }
             currentHead.setNext(newNode);
         }
-        System.out.println("after if in isert fun");
         size++;
-
     }
-
     public boolean includes(T value){
-        Node<T> current = this.head;
+        Node<T> currentHead = this.head;
         if(size != 0){
-            while(current != null){
-                if(current.getData() == value){
+            while(currentHead != null){
+                if(currentHead.getData() == value){
                     return true;
                 }
-                current = current.getNext();
+                currentHead = currentHead.getNext();
             }
         }
         return false;
     }
 
+public void append (T data){
+    Node<T> newNode = new Node<>(data);
+if (head==null){
+    head=newNode;
+}
+    Node<T> currentHead = this.head;
+while(currentHead.getNext() != null){
 
+    currentHead=currentHead.getNext();
+}
+currentHead.setNext(newNode);
+size ++;
+
+}
+public void inserBefore(T value,T data){
+    Node<T> newNode = new Node<>(data);
+    Node<T> currentHead = this.head;
+
+    boolean isValue=includes(value);
+    if(isValue){
+        while(isValue){
+            Node<T> currentHeadSpeedUp = currentHead.getNext();
+            if(currentHeadSpeedUp.getData() == value){
+                currentHead.setNext(newNode);
+                newNode.setNext(currentHeadSpeedUp);
+                isValue=false;
+            }
+            currentHead=currentHead.getNext();
+
+        }
+    }
+
+}
+    public void inserAfter(T value,T data){
+        Node<T> newNode = new Node<>(data);
+        Node<T> currentHead = this.head;
+
+        boolean isValue=includes(value);
+        if(isValue){
+            while(isValue){
+                if(currentHead.getData() == value){
+                    Node<T> currentHeadSpeedUp = currentHead.getNext();
+                    currentHead.setNext(newNode);
+                    newNode.setNext(currentHeadSpeedUp);
+                    isValue=false;
+                }
+                currentHead=currentHead.getNext();
+
+            }
+        }
+
+    }
         public String tostringg () {
 
             Node<T> currentHead = this.head;
