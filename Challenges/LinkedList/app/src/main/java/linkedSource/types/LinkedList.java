@@ -47,6 +47,9 @@ public class LinkedList<T> {
     }
     return false;
   }
+  public void append (T value){
+    Node<T> current = this.head;
+  }
 
   public String toString(){
     Node<T> current = this.head;
