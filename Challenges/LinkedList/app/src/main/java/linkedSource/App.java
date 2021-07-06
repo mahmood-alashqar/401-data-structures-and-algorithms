@@ -4,6 +4,7 @@ import types.LinkedList;
 
 public class App {
   private static final LinkedList<Integer> list = new LinkedList<>();
+  private static final LinkedList<Integer> list2 = new LinkedList<>();
   public static void main(String[] args) {
     System.out.println("Type of linked list is integer");
     list.add(1);
@@ -18,5 +19,10 @@ public class App {
     System.out.println("the kth is " + list.kthFromEnd(6));
     System.out.println("The Size of the list is  "+ list.getSize());
     System.out.println(list);
+    list2.insert(4);
+    list2.insert(5);
+    list2.insert(6);
+    System.out.println("Ziped  List = "+ list.getzipLists(list , list2));
   }
+
 }
