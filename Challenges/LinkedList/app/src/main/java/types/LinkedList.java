@@ -110,4 +110,18 @@ public class LinkedList<T> {
   public int getSize(){
     return size;
   }
+  public  static LinkedList getzipLists(LinkedList list1 , LinkedList list2){
+    LinkedList zipLinkedList = new LinkedList() ;
+    int biggerLength = list1.getSize() >= list2.getSize() ? list1.getSize() : list2.getSize() ;
+    for(int i = 1 ; i<=biggerLength ; i++){
+      if(list1.getSize()-i >= 0) {
+        zipLinkedList.add(list1.kthFromEnd(list1.getSize() - i));
+      }
+      if(list2.getSize()-i >= 0)
+      {
+        zipLinkedList.add(list2.kthFromEnd(list2.getSize() - i));
+      }
+    }
+    return zipLinkedList ;
+  }
 }
