@@ -2,8 +2,13 @@ package data;
 
 public class Node<T> {
 
-  private Node<T> next;
-  private final T data;
+  public Node<T> next;
+
+  public void setData(T data) {
+    this.data = data;
+  }
+
+  private T data;
 
   public Node(T data) {
     this.data = data;

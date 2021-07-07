@@ -22,7 +22,10 @@ public class App {
     list2.insert(4);
     list2.insert(5);
     list2.insert(6);
+    list2.insert(7);
     System.out.println("Ziped  List = "+ list.getzipLists(list , list2));
+    System.out.println( list2);
+    System.out.println( list2.reverseLinkedList(list2));
   }
 
 }
