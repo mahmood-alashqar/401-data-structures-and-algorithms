@@ -4,11 +4,10 @@ public class Node<T> {
 
   public Node<T> next;
 
-  public void setData(T data) {
-    this.data = data;
-  }
 
-  private T data;
+
+  private final
+  T data;
 
   public Node(T data) {
     this.data = data;

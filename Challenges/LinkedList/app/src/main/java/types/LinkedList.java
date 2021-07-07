@@ -3,6 +3,8 @@ package types;
 
 import data.Node;
 
+import java.util.ArrayList;
+
 public class LinkedList<T> {
   private Node<T> head;
   private int size;
@@ -157,5 +159,55 @@ public class LinkedList<T> {
     head.next = previous;
     return theChain;
   }
+  public boolean palandrome(LinkedList<T> p){
+    ArrayList<T> t = new ArrayList<>();
+    Node<T> curr = p.head;
+    while (curr != null){
+      t.add(curr.getData());
+      curr = curr.next;
+    }
 
+    System.out.println(t.get(3) );
+    if(t.size()%2==0) {
+      for (int i = 0; i < t.size() - 1; i++) {
+
+        for (int j = t.size() - 1; j > 0; j--) {
+
+          if (t.get(i) == t.get(j)) {
+            System.out.println("first if");
+            i++;
+
+            continue;
+
+          } else {
+            i++;
+
+            return false;
+          }
+        }
+      }
+
+    }
+    else{
+      t.remove(size/2);
+      for (int i = 0; i < t.size() - 1; i++) {
+
+        for (int j = t.size() - 1; j > 0; j--) {
+
+          if (t.get(i) == t.get(j)) {
+            System.out.println("first if");
+            i++;
+
+            continue;
+
+          } else {
+            i++;
+
+            return false;
+          }
+        }
+      }
+    }
+    return true;
+  }
 }
