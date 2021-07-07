@@ -3,6 +3,8 @@ package types;
 
 import data.Node;
 
+import java.util.ArrayList;
+
 public class LinkedList<T> {
   private Node<T> head;
   private int size;
@@ -110,8 +112,8 @@ public class LinkedList<T> {
   public int getSize(){
     return size;
   }
-  public  static LinkedList getzipLists(LinkedList list1 , LinkedList list2){
-    LinkedList zipLinkedList = new LinkedList() ;
+  public  static LinkedList<Integer> getzipLists(LinkedList<Integer> list1 , LinkedList<Integer> list2){
+    LinkedList<Integer> zipLinkedList = new LinkedList<Integer>() ;
     int biggerLength = list1.getSize() >= list2.getSize() ? list1.getSize() : list2.getSize() ;
     for(int i = 1 ; i<=biggerLength ; i++){
       if(list1.getSize()-i >= 0) {
@@ -123,5 +125,89 @@ public class LinkedList<T> {
       }
     }
     return zipLinkedList ;
+  }
+
+
+  public LinkedList<T> reverseLinkedList(LinkedList<T> theChain){
+//    Node<T> currentTail = this.head ;
+//
+//    int i=0;
+//    while (getSize()>i){
+//      currentTail=currentTail.getNext();
+//      if(currentTail.getNext()==null){
+//    this.head.setNext(head.getData());
+//    this.head.setData(currentTail.getData());
+//    currentTail=this.head;
+//        i++;
+//
+//
+//      }
+//
+//    }
+//return theChain;
+    Node<T> next = null ;
+    Node<T> previous = null;
+
+    while(head.getNext() != null){
+      next = head.getNext();//move next to next address
+      head.setNext(previous);   //previous node will be the next node for head, so that head will point reverse
+      previous = head; //incrementing previous to the current node
+      head = next; //incrementing head
+
+    }
+    //at this point head points to last node and previous has the remaining reversed array
+    head.next = previous;
+    return theChain;
+  }
+  public boolean palandrome(LinkedList<T> p){
+    ArrayList<T> t = new ArrayList<>();
+    Node<T> curr = p.head;
+    while (curr != null){
+      t.add(curr.getData());
+      curr = curr.next;
+    }
+
+    System.out.println(t.get(3) );
+    if(t.size()%2==0) {
+      for (int i = 0; i < t.size() - 1; i++) {
+
+        for (int j = t.size() - 1; j > 0; j--) {
+
+          if (t.get(i) == t.get(j)) {
+            System.out.println("first if");
+            i++;
+
+            continue;
+
+          } else {
+            i++;
+
+            return false;
+          }
+        }
+      }
+
+    }
+    else{
+      t.remove(size/2);
+      for (int i = 0; i < t.size() - 1; i++) {
+
+        for (int j = t.size() - 1; j > 0; j--) {
+
+          if (t.get(i) == t.get(j)) {
+            System.out.println("first if");
+            i++;
+
+            continue;
+
+          } else {
+            i++;
+
+            return false;
+          }
+        }
+      }
+    }
+    return true;
   }
 }

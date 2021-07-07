@@ -20,9 +20,15 @@ public class App {
     System.out.println("The Size of the list is  "+ list.getSize());
     System.out.println(list);
     list2.insert(4);
+    list2.insert(4);
+    list2.insert(1);
     list2.insert(5);
-    list2.insert(6);
-    System.out.println("Ziped  List = "+ list.getzipLists(list , list2));
+    list2.insert(1);
+    list2.insert(4);
+    list2.insert(4);
+//    System.out.println("Ziped  List = "+ list.getzipLists(list , list2));
+//    System.out.println( list2.palandrome(list2));
+//    System.out.println( list2.reverseLinkedList(list2));
   }
 
 }
