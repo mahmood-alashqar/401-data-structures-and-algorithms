@@ -127,24 +127,13 @@ public class LinkedList<T> {
     return zipLinkedList ;
   }
 
-
+    /**
+     *
+     * @param theChain
+     * @return  reversing theChain
+     */
   public LinkedList<T> reverseLinkedList(LinkedList<T> theChain){
-//    Node<T> currentTail = this.head ;
-//
-//    int i=0;
-//    while (getSize()>i){
-//      currentTail=currentTail.getNext();
-//      if(currentTail.getNext()==null){
-//    this.head.setNext(head.getData());
-//    this.head.setData(currentTail.getData());
-//    currentTail=this.head;
-//        i++;
-//
-//
-//      }
-//
-//    }
-//return theChain;
+
     Node<T> next = null ;
     Node<T> previous = null;
 
