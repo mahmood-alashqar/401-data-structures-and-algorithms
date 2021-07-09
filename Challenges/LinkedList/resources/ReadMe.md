@@ -19,3 +19,4 @@ these allow you to add to your linked list
 
 ## kthFromEnd
 ### return the node at specific index vice-versa
+![](returnnum.PNG)
