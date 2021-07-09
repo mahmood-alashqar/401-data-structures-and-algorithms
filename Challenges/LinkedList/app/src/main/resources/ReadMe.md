@@ -11,7 +11,7 @@ these allow you to add to your linked list
 
 ![](insertBefore.PNG)
 
-//
+
 ## insertAfter
 ### thats take a newnode and the value of the data thats you need to isert this newnode after
 
