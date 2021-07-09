@@ -32,5 +32,6 @@ public class AppTest {
         list.add("Yousef");
         list.insert("alashqar");
         assertEquals("{mahmood}-> {yousef}-> {alashqar}-> NULL", list.toString());
+
     }
 }

@@ -1,5 +1,5 @@
 # Stack
-## implement the stack from scratch and you will find the following methods you can do:
+## implement the stack from skratch and you will find the following methods you can do:
 * isEmpty()// check if the stack is empty
 * push(new Node)// add new node at the top
 * pop()// delete from the top
