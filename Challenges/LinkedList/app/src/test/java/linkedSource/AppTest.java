@@ -25,12 +25,13 @@ public class AppTest {
         list.insert("alashqar");
         assertEquals(false, list.includes("mahmood"));
     }
-
+//
     @Test public void testLinkedListToString(){
         list = new LinkedList<>();
         list.add("mahmood");
         list.add("Yousef");
         list.insert("alashqar");
         assertEquals("{mahmood}-> {yousef}-> {alashqar}-> NULL", list.toString());
+
     }
 }

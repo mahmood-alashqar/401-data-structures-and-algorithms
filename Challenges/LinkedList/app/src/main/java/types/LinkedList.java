@@ -101,7 +101,7 @@ public class LinkedList<T> {
     currentHead.setNext(node);
     size++;
   }
-
+//
   public T kthFromEnd(int data){
     Node<T> currentHead = this.head ;
     for(int i = 1 ; i < (this.size - data) ; i++ ){
