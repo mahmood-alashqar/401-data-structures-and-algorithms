@@ -8,7 +8,7 @@ import types.LinkedList;
 
 import static org.junit.Assert.*;
 
-public class AppTest {
+public class AppTest<T> {
 
     private LinkedList<String> list;
 
@@ -34,4 +34,13 @@ public class AppTest {
         assertEquals("{mahmood}-> {yousef}-> {alashqar}-> NULL", list.toString());
 
     }
+    LinkedList linked = new LinkedList(); @Test void kGreaterLength() { linked.insert(2); linked.add(4); linked.add(3); linked.add(5); int expect = -1 ; T x= (T) linked.kthFromEnd(5); assertEquals(expect ,x); }
+
+    @Test void kEqualLength(){ linked.insert(2); linked.add(4); linked.add(3); linked.add(5); int expect = 2; T x= (T) linked.kthFromEnd(4); assertEquals(expect,x); }
+
+    @Test void negativeK(){ linked.insert(2); linked.add(4); linked.add(3); linked.add(5); int expect = 0; T x= (T) linked.kthFromEnd(-1); assertEquals(expect,x); }
+
+    @Test void oneNode(){ linked.insert(5); int expect = 5; T x= (T) linked.kthFromEnd(1); assertEquals(expect,x); }
+
+    @Test void happyPath(){ linked.insert(2); linked.add(4); linked.add(9); linked.add(6); linked.add(8); int expect = 9; T x= (T) linked.kthFromEnd(3); assertEquals(expect,x); }
 }
