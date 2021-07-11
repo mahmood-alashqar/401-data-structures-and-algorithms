@@ -3,11 +3,7 @@ package data;
 public class Node<T> {
 
   public Node<T> next;
-
-
-
-  private final
-  T data;
+  private final T data;
 
   public Node(T data) {
     this.data = data;

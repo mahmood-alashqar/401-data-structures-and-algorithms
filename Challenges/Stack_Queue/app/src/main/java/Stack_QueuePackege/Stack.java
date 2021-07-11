@@ -1,49 +1,46 @@
 package Stack_QueuePackege;
 import Nodes.Node;
 public class Stack<T> {
-    private Node top;
-    private int size=0;
-
+    Node head;
+    int size=0;
     public boolean isEmpty(){
-        if(top ==null){
+        if (head == null){
             return true;
         }
         return false;
     }
-    public void push(T newData){
-        Node newNode = new Node<>(newData);
+    public void push(T data){
+        Node newNode = new Node(data);
         if(isEmpty()){
-            top =newNode;
+            head=newNode;
             size++;
-        }
-        else{
-            Node temp = top;
-            newNode.setNext(temp);
-            top = newNode;
-           size++;
+        }else{
+            Node temp=head;
+            newNode.next=temp;
+            head=newNode;
+            size++;
         }
     }
     public T peek(){
-        return (T) top.getData();
+        return (T) head.getData();
     }
-    public void pop(){
-        if(isEmpty()){
-            System.out.println("your list is empty");
-        }
-        else{
-            Node temp= top;
-            top = top.next;
+    public Object pop(){
+        if(isEmpty()) {
+            System.out.println("is empty");
+        }else{
+            Node temp=head;
+            head= head.getNext();
             temp.setNext(null);
             size--;
         }
+        return null;
     }
     public void tostring(){
-        while (size!=0){
-            System.out.print("{"+peek()+"} => ");
+        while(size!=0){
+            System.out.print("{"+ peek()+"} ->");
             pop();
         }
-        System.out.print("Button");
-        System.out.println("");
+        System.out.print("Bottom");
+        System.out.println();
     }
-
 }
