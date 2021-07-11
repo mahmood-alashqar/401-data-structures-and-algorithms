@@ -18,3 +18,4 @@ dequeue:
 sodo.dequeue();
 Result: {3} ->{2} ->Null
 ![](queue-stack.PNG)
+//
