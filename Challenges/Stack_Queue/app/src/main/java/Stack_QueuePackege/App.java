@@ -24,7 +24,6 @@ Queue queue = new Queue();
 //        stack.peek();
 //        System.out.println("this on the Top --> "+stack.peek());
 //        stack.tostring();
-//
 //        queue.enQueue(5);
 //        queue.enQueue(4);
 //        queue.enQueue(3);
@@ -48,14 +47,15 @@ Queue queue = new Queue();
 //test.dequeue();
 //test.dequeue();// {1} has been removed
 //      test.tostring();
-     Animal animal = new Animal("cat");
-     Animal animal1 = new Animal("dog");
-     Animal animal2 = new Animal("monkey");
-     animal.enqueue(animal.getKind());
-     animal.enqueue(animal1.getKind());
-     animal.enqueue(animal2.getKind());
-     System.out.println( animal.deQueue("dog"));
-     animal.tostring();
-
+//     Animal animal = new Animal("cat");
+//     Animal animal1 = new Animal("dog");
+//     Animal animal2 = new Animal("monkey");
+//     animal.enqueue(animal.getKind());
+//     animal.enqueue(animal1.getKind());
+//     animal.enqueue(animal2.getKind());
+//     System.out.println( animal.deQueue("dog"));
+//     animal.tostring();
+Algorithm g = new Algorithm();
+        System.out.println(g.correctBrackets("{()}[]"));
     }
 }
