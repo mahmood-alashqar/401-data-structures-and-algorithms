@@ -19,7 +19,6 @@ public class Algorithm {
             if (s.isEmpty()) {
                 return false;
             }
-
             switch (brackets.charAt(i)) {
                 case ')':
                     x = s.peek();
@@ -27,14 +26,12 @@ public class Algorithm {
                     if (x == '{' || x == '[')
                         return false;
                     break;
-
                 case '}':
                     x = s.peek();
                     s.pop();
                     if (x == '(' || x == '[')
                         return false;
                     break;
-
                 case ']':
                     x = s.peek();
                     s.pop();
