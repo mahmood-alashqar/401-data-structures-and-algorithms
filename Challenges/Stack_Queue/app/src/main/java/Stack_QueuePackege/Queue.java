@@ -30,7 +30,6 @@ public class Queue<T> {
     }
     public void dequeue (){
         if(isEmpty()){
-            System.out.println("enta empty");
         }else
         {
             Node temp = front;
@@ -39,12 +38,12 @@ public class Queue<T> {
             size--;
         }
     }
-    public T getFront(){
+    public T peek(){
         return (T) front.getData();
     }
     public void tostring(){
         while (size!=0){
-            System.out.print("{"+getFront()+"} => ");
+            System.out.print("{"+peek()+"} => ");
             dequeue();
         }
         System.out.print("Button");
