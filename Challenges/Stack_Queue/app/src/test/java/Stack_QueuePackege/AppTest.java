@@ -11,13 +11,32 @@ public class AppTest {
         Stack_QueuePackege.App classUnderTest = new Stack_QueuePackege.App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
-    @Test public void testEnQueue(){
-        Animal animal = new Animal("cat");
-        animal.enqueue(animal.getKind());
-        assertEquals("cat",animal.getKind());
+    @Test
+    public void testPushStack(){
+        Stack testStackList = new Stack();
+        testStackList.push(1);
+        assertNotNull(testStackList);
     }
-    @Test public void testdeQueue(){
-        Animal animal = new Animal("dog");
-        assertEquals(" the pref was a dog",animal.deQueue("dog"));
+    @Test
+    public void testPeekStack(){
+        Stack testStackList = new Stack();
+        testStackList.push(1);
+        testStackList.push(2);
+        testStackList.push(3);
+        assertEquals(3 , testStackList.peek());
+    }
+    @Test
+    public void testEnqueueQueue(){
+        Queue testQueueList = new Queue();
+        testQueueList.enQueue(1);
+        assertNotNull(testQueueList);
+    }
+    @Test
+    public void testPeekQueue(){
+        Queue testQueueList = new Queue();
+        testQueueList.enQueue(1);
+        testQueueList.enQueue(2);
+        testQueueList.enQueue(3);
+        assertEquals(1 , testQueueList.peek());
     }
 }
