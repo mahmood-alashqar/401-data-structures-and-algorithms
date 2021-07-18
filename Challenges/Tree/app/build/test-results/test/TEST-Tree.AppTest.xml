@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tree.AppTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-07-18T17:43:43" hostname="Mr" time="0.014">
+  <properties/>
+  <testcase name="testPostOrder" classname="Tree.AppTest" time="0.003"/>
+  <testcase name="testAddTree" classname="Tree.AppTest" time="0.001"/>
+  <testcase name="testIfTreeEmpty" classname="Tree.AppTest" time="0.001"/>
+  <testcase name="testPreOrder" classname="Tree.AppTest" time="0.0"/>
+  <testcase name="testAddLeftRght" classname="Tree.AppTest" time="0.001"/>
+  <testcase name="testAppHasAGreeting" classname="Tree.AppTest" time="0.0"/>
+  <testcase name="testInOrder" classname="Tree.AppTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -4,20 +4,28 @@
 package Stack_QueuePackege;
 
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
+    @Test
+    public void testAppHasAGreeting() {
         Stack_QueuePackege.App classUnderTest = new Stack_QueuePackege.App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
-    @Test public void testEnQueue(){
-        Animal animal = new Animal("cat");
-        animal.enqueue(animal.getKind());
-        assertEquals("cat",animal.getKind());
-    }
-    @Test public void testdeQueue(){
-        Animal animal = new Animal("dog");
-        assertEquals(" the pref was a dog",animal.deQueue("dog"));
+
+    @Test
+    public void testAnimalShelterDequeue() {
+        AnimalShelter animalShelter = new AnimalShelter();
+        Dog dog1 = new Dog("Scooby");
+        animalShelter.enqueue(dog1);
+        Cat cat2 = new Cat("Garfield");
+        animalShelter.enqueue(cat2);
+        Cat cat3 = new Cat("HelloKitty");
+        animalShelter.enqueue(cat3);
+        Dog dog4 = new Dog("Scrappy");
+        animalShelter.enqueue(dog4);
+        assertEquals(dog1.getName(), animalShelter.dequeue("dog").getName());
+        assertEquals(dog4.getName(), animalShelter.dequeue("dog").getName());
     }
 }
