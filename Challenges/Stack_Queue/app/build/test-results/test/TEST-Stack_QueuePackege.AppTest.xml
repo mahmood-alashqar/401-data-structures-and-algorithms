@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Stack_QueuePackege.AppTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-07-13T20:51:20" hostname="Mr" time="0.011">
+  <properties/>
+  <testcase name="testEnQueue" classname="Stack_QueuePackege.AppTest" time="0.008"/>
+  <testcase name="testdeQueue" classname="Stack_QueuePackege.AppTest" time="0.001"/>
+  <testcase name="testAppHasAGreeting" classname="Stack_QueuePackege.AppTest" time="0.001"/>
+  <system-out><![CDATA[cat
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

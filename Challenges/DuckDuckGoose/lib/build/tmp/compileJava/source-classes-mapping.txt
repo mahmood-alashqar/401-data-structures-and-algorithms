@@ -1,0 +1,8 @@
+Nodes/Node.java
+ Nodes.Node
+DuckDuckGoose/DuckDuckGoose.java
+ DuckDuckGoose.DuckDuckGoose
+DuckDuckGoose/CircularQueue.java
+ DuckDuckGoose.CircularQueue
+DuckDuckGoose/Library.java
+ DuckDuckGoose.Library

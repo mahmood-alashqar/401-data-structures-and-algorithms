@@ -1,0 +1,14 @@
+Stack_QueuePackege/Queue.java
+ Stack_QueuePackege.Queue
+Nodes/Node.java
+ Nodes.Node
+Stack_QueuePackege/Stack.java
+ Stack_QueuePackege.Stack
+Stack_QueuePackege/PseudoQueue.java
+ Stack_QueuePackege.PseudoQueue
+Stack_QueuePackege/Animal.java
+ Stack_QueuePackege.Animal
+Stack_QueuePackege/Algorithm.java
+ Stack_QueuePackege.Algorithm
+Stack_QueuePackege/App.java
+ Stack_QueuePackege.App
