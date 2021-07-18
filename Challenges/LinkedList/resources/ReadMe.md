@@ -16,3 +16,7 @@ these allow you to add to your linked list
 ### thats take a newnode and the value of the data thats you need to isert this newnode after
 
 ![](insertAfter.PNG)
+
+## kthFromEnd
+### return the node at specific index vice-versa
+![](returnnum.PNG)
