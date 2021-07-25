@@ -56,6 +56,6 @@ Queue queue = new Queue();
 //     System.out.println( animal.deQueue("dog"));
 //     animal.tostring();
 Algorithm g = new Algorithm();
-        System.out.println(g.correctBrackets("{()}[]"));
+        System.out.println(g.correctBrackets("{(})"));
     }
 }
