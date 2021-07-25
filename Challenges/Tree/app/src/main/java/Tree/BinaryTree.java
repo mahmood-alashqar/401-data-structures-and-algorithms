@@ -61,4 +61,26 @@ public class BinaryTree<T> {
 
         return 1 + Math.max(height(node.getLeft()), height(node.getRight()));
     }
+
+    private int max = 0;
+    public Number findMax(){
+        if (getRoot() != null){
+            max = (int) getleftRight(root);
+        }
+        return max;
+    }
+    private Number getleftRight(Node node){
+        if ((node.getRight() == null) && (node.getLeft() == null)){
+            if (max < (int) node.getKey()){
+                max = (int) node.getKey();
+            }
+        }
+        if (node.getRight() != null){
+            getleftRight(node.getRight());
+        }
+        if (node.getLeft() != null){
+            getleftRight(node.getLeft());
+        }
+        return max;
+    }
 }
