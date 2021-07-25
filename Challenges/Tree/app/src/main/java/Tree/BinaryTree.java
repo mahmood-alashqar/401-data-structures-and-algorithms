@@ -74,6 +74,7 @@ public class BinaryTree<T> {
             if (max < (int) node.getKey()){
                 max = (int) node.getKey();
             }
+
         }
         if (node.getRight() != null){
             getleftRight(node.getRight());
