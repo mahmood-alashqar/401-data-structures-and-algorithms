@@ -71,4 +71,5 @@ public class AppTest {
         bineryTree.getRoot().setRight(new Node(3));
         assertEquals(3,bineryTree.findMax());
     }
+
 }
