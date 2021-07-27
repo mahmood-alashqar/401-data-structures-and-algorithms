@@ -35,3 +35,5 @@ binaryTreeTest.getRoot().getLeft().getLeft().setLeft(new Node(5));
 binaryTreeTest.getRoot().getRight().setLeft(new Node(6));
 assertEquals("[1, 2, 3, 4, 6, 5]",binaryTreeTest.breadthFirst(binaryTreeTest).toString());
 }
+
+# 
