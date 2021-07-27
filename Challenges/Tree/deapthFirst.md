@@ -21,3 +21,19 @@ tree.getRoot().getRight().setRight(new Node<T>(9));
 tree.getRoot().getRight().getRight().setLeft(new Node<T>(4));
 System.out.println(tree.breadthFirst(tree));
 Solution: [2, 7, 5, 6, 9, 1, 11, 4]
+
+## Test
+
+BineryTree binaryTreeTest = new BineryTree();
+@Test
+public void breadthFirstValuesInTreeTest(){
+binaryTreeTest.setRoot(new Node(1));
+binaryTreeTest.getRoot().setLeft(new Node(2));
+binaryTreeTest.getRoot().setRight(new Node(3));
+binaryTreeTest.getRoot().getLeft().setLeft(new Node(4));
+binaryTreeTest.getRoot().getLeft().getLeft().setLeft(new Node(5));
+binaryTreeTest.getRoot().getRight().setLeft(new Node(6));
+assertEquals("[1, 2, 3, 4, 6, 5]",binaryTreeTest.breadthFirst(binaryTreeTest).toString());
+}
+
+# 
