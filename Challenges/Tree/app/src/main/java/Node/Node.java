@@ -1,5 +1,5 @@
 package Node;
-public class Node {
+public class Node<T> {
     private final int key;
     private Node left;
     private Node right;
