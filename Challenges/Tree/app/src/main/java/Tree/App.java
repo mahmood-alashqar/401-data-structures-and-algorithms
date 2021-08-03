@@ -35,7 +35,7 @@ public class App {
         list.add(40);
         list.add(50);
         list.add(60);
-        list.add(70);
+        list.add(70);//
         list.add(8);
         list.add(90);
         list.add(30);
