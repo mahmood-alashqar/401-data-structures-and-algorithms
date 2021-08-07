@@ -5,6 +5,8 @@ import Node.Node;
 
 import java.util.ArrayList;
 import java.util.Stack;
+import QueueNode.Queue;
+import QueueNode.QueueNode;
 
 public class BinaryTree<T> {
     private Node root;
@@ -83,5 +85,24 @@ public class BinaryTree<T> {
             getleftRight(node.getLeft());
         }
         return max;
+    }
+    public ArrayList<Integer> breadthFirst(BinaryTree tree) {
+        ArrayList<Integer> list = new ArrayList<>();
+        if (tree.root == null) {
+            return null;
+        }
+        Queue<QueueNode> queue = new Queue<QueueNode>();
+        queue.enQueue(tree.root);
+        while (!queue.isEmpty()) {
+            Node node = queue.dequeue();
+            list.add((Integer) node.getKey());
+            if (node.getLeft() != null) {
+                queue.enQueue(node.getLeft());
+            }
+            if (node.getRight() != null) {
+                queue.enQueue(node.getRight());
+            }
+        }
+        return list;
     }
 }
