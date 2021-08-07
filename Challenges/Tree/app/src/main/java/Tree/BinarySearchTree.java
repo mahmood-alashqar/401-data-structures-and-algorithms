@@ -1,28 +1,30 @@
 package Tree;
 
 import Node.Node;
+
+
 public class BinarySearchTree<T> {
-    private Node root;
+    private Node<T> root;
 
     public void add(int key) {
         if (root == null) {
-            root = new Node(key);
+            root = new Node<T>(key);
         } else {
-            Node current = root;
+            Node<T> current = root;
             traversal(current, key);
         }
     }
 
-    public void traversal(Node current, int key) {
+    public void traversal(Node<T> current, int key) {
         if (key > current.getKey()) {
             if (current.getRight() == null) {
-                current.setRight(new Node(key));
+                current.setRight(new Node<T>(key));
                 return;
             }
             current = current.getRight();
         } else {
             if (current.getLeft() == null) {
-                current.setLeft(new Node(key));
+                current.setLeft(new Node<T>(key));
                 return;
             }
             current = current.getLeft();
@@ -31,7 +33,7 @@ public class BinarySearchTree<T> {
     }
 
     public boolean contains(int key) {
-        Node current = root;
+        Node<T> current = root;
         current = searchBT(current, key);
         if (current != null)
             return true;
@@ -39,7 +41,7 @@ public class BinarySearchTree<T> {
             return false;
     }
 
-    public Node searchBT(Node current, int key) {
+    public Node<T> searchBT(Node<T> current, int key) {
         if (current == null || current.getKey() == key)
             return current;
         if (current.getKey() > key)
@@ -47,7 +49,7 @@ public class BinarySearchTree<T> {
         return searchBT(current.getRight(), key);
     }
 
-    public Node getRoot() {
+    public Node<T> getRoot() {
         return root;
     }
 
