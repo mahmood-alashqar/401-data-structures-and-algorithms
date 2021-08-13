@@ -1,4 +1,5 @@
 
+import HashTable.HashTable;
 import Insertion.Sort;
 import Merge.MergSort;
 import QuickSort.QuickSort;
@@ -16,5 +17,18 @@ public class App {
         QuickSort quickSort= new QuickSort();
         int arr[] = {4, -30, 30, 15, -15, 99, 9, 0};
         System.out.println(Arrays.toString(quickSort.quickSort(arr, 0, arr.length - 1)));
+
+        //====================>>>
+
+        HashTable<Object, Integer> salary = new HashTable<Object, Integer>();
+        salary.add("John", 300);
+        salary.add("Sally", 400);
+        salary.add("Tom", 200);
+        salary.add("Jade", 100);
+
+        System.out.println("The size is => " + salary.getSize());
+        System.out.println("The Sally allowance is => " + salary.get("Sally"));
+        System.out.println("Delete Sally => " + salary.remove("Sally"));
+        System.out.println("The size is => " + salary.getSize());
     }
 }
