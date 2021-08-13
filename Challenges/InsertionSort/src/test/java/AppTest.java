@@ -1,3 +1,4 @@
+import HashTable.HashTable;
 import Insertion.Sort;
 import Merge.MergSort;
 import QuickSort.QuickSort;
@@ -35,4 +36,14 @@ public class AppTest {
         quickSort.quickSort(arr,0,arr.length-1);
 
         String res= Arrays.toString(arr); assertEquals("[1, 4, 8, 15, 16, 23, 42]",res); }
+    @Test
+    void testHashMap(){
+        HashTable<Object, Integer> salary = new HashTable<Object, Integer>();
+        salary.add("John", 300);
+        salary.add("Sally", 400);
+        salary.add("Jade", 100);
+        System.out.println("Delete Sally => " + salary.remove("Sally"));
+        System.out.println("The size is => " + salary.getSize());
+        assertTrue(salary.getSize()==2);
+    }
 }
