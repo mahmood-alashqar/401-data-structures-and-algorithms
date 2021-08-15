@@ -1,26 +1,49 @@
-# HashTable
-class implements a hash table, which maps keys to values. Any non-null object can be used as a key or as a value. To successfully store and retrieve objects from a hashtable, the objects used as keys must implement the hashCode method and the equals method.
+# Challenge Summary
+<!-- Description of the challenge -->
 
-- create HashNode class contains key, value and hashcode.
-- create HashTable class contains HashTable constucter ,getBucketIndex,add(K key, V value),remove(K key) and get(K key).
-
-
-# Challenge
-Type Parameters:
-
-K – the type of keys maintained by this map
-V – the type of mapped values
+function called repeated word that finds the first word to occur more than once in a string
+Arguments: string
+Return: string
 
 
-# Approach & Efficiency
-Node
-Linkedlist
-HashMap
-Arraylist
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![](challenge31.PNG)
 
-O(1) ==> best
-O(n)==> worst
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Big O(n)
 
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
 
-# API
-None
+```
+String test ="Once upon a time, there was a brave princess who...";
+        System.out.println("The Repeated Woed Is ---> "+salary.repeatedWord(test.toLowerCase()));
+```
+
+- result:
+```
+The Repeated Woed Is ---> a
+```
+
+## Test
+```
+ @Test
+    public void testRepeatedWord(){
+
+        String test ="Once upon a time, there was a brave princess who...";
+        assertEquals(salary.repeatedWord(test.toLowerCase()),"a");
+    }
+    @Test
+    public void testRepeatedWordRegardlessLowerOrUpperCase()
+    {
+        String test = "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only...";
+        assertEquals(salary.repeatedWord(test.toLowerCase()),"it");
+    }
+    @Test
+    public void testReapeatedWordWithSymbol(){
+        String test = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn't know what I was doing in New York...";
+        assertEquals(salary.repeatedWord(test.toLowerCase()),"summer");
+    }
+```
