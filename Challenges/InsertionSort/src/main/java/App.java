@@ -32,7 +32,7 @@ public class App {
         System.out.println("The size is => " + salary.getSize());
         String test ="Once upon a time, there was a brave princess who...";
         System.out.println("The Repeated Woed Is --->"+salary.repeatedWord(test.toLowerCase()));
-//
+
         System.out.println("The size is => " + salary.getSize());
     }
 }
