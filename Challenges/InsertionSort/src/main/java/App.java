@@ -5,6 +5,7 @@ import Merge.MergSort;
 import QuickSort.QuickSort;
 
 import java.util.Arrays;
+import java.util.Locale;
 
 public class App {
 
@@ -31,9 +32,9 @@ public class App {
         System.out.println("Delete Sally => " + salary.remove("Sally"));
         System.out.println("The size is => " + salary.getSize());
 
-        String test = "In this case, the pattern will be applied many times as possible, the resulting array can be discarde";
-        System.out.println(salary.repeatedWord(test));
-
+        String test ="Once upon a time, there was a brave princess who...";
+        System.out.println("The Repeated Woed Is --->"+salary.repeatedWord(test.toLowerCase()));
+//
         System.out.println("The size is => " + salary.getSize());
 //        System.out.println("kkkkkkkkkkkk"+ );
     }
