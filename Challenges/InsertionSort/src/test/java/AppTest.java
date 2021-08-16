@@ -63,5 +63,26 @@ public class AppTest {
         String test = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn't know what I was doing in New York...";
         assertEquals(salary.repeatedWord(test.toLowerCase()),"summer");
     }
-    //
+    @Test
+    public void inseartionTest(){
+        BinaryTree<Integer> binaryTree = new BinaryTree();
+
+        binaryTree.setRoot(new Node<>(1));
+        binaryTree.getRoot().setLeft(new Node<>(5));
+        binaryTree.getRoot().setRight(new Node<>(3));
+        binaryTree.getRoot().getLeft().setLeft(new Node<>(4));
+
+        BinaryTree<Integer> binaryTree2 = new BinaryTree();
+
+        binaryTree2.setRoot(new Node<>(1));
+        binaryTree2.getRoot().setLeft(new Node<>(5));
+        binaryTree2.getRoot().setRight(new Node<>(2));
+        binaryTree2.getRoot().getLeft().setLeft(new Node<>(4));
+
+        ArrayList test =  new ArrayList();
+        test.add(1);
+        test.add(5);
+        test.add(4);
+        assertEquals(salary.treeIntersection(binaryTree,binaryTree2),test);
+    }
 }

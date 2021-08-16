@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ba02f40-d54c-4f12-8a64-bb6c2f239914" name="Default Changelist" comment="with whiteboard" />
+    <list default="true" id="0ba02f40-d54c-4f12-8a64-bb6c2f239914" name="Default Changelist" comment="CC31">
+      <change afterPath="$PROJECT_DIR$/Challenges/InsertionSort/src/main/java/HashTable/CC32.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Challenges/InsertionSort/src/main/java/Tree/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Challenges/InsertionSort/src/main/java/Tree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Challenges/InsertionSort/src/main/java/Tree/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,10 +31,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Challenges/InsertionSort" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Challenges/InsertionSort/src/main/java/Tree" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Challenges/InsertionSort/src/main/java/HashTable" />
       <recent name="$PROJECT_DIR$/Challenges/LinkedList/app/src/main/java/linkedSource/Resources" />
     </key>
   </component>
@@ -41,6 +48,8 @@
       <option name="presentableId" value="Default" />
       <updated>1625578549751</updated>
       <workItem from="1629032679353" duration="64000" />
+      <workItem from="1629032799197" duration="1983000" />
+      <workItem from="1629118518852" duration="894000" />
     </task>
     <task id="LOCAL-00001" summary="with whiteboard">
       <created>1625596306900</created>
@@ -49,7 +58,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625596306900</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CC31">
+      <created>1629033050640</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629033050640</updated>
+    </task>
+    <task id="LOCAL-00003" summary="CC31">
+      <created>1629036233259</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629036233259</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="with whiteboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="with whiteboard" />
+    <MESSAGE value="CC31" />
+    <option name="LAST_COMMIT_MESSAGE" value="CC31" />
   </component>
 </project>
