@@ -34,5 +34,17 @@ public class App {
         System.out.println("The Repeated Woed Is --->"+salary.repeatedWord(test.toLowerCase()));
 
         System.out.println("The size is => " + salary.getSize());
+
+        BinaryTree<Integer> binaryTree = new BinaryTree();
+        binaryTree.setRoot(new Node<>(1));
+        binaryTree.getRoot().setLeft(new Node<>(5));
+        binaryTree.getRoot().setRight(new Node<>(3));
+        binaryTree.getRoot().getLeft().setLeft(new Node<>(4));
+        BinaryTree<Integer> binaryTree2 = new BinaryTree();
+        binaryTree2.setRoot(new Node<>(1));
+        binaryTree2.getRoot().setLeft(new Node<>(5));
+        binaryTree2.getRoot().setRight(new Node<>(2));
+        binaryTree2.getRoot().getLeft().setLeft(new Node<>(4));
+        System.out.println(salary.treeIntersection(binaryTree,binaryTree2));
     }
 }

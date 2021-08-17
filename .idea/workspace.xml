@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ba02f40-d54c-4f12-8a64-bb6c2f239914" name="Default Changelist" comment="CC32" />
+    <list default="true" id="0ba02f40-d54c-4f12-8a64-bb6c2f239914" name="Default Changelist" comment="CC32">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Challenges/InsertionSort/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Challenges/InsertionSort/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Challenges/InsertionSort/src/main/java/HashTable/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Challenges/InsertionSort/src/main/java/HashTable/HashTable.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +49,7 @@
       <workItem from="1629032679353" duration="64000" />
       <workItem from="1629032799197" duration="1983000" />
       <workItem from="1629118518852" duration="1537000" />
+      <workItem from="1629185870865" duration="1133000" />
     </task>
     <task id="LOCAL-00001" summary="with whiteboard">
       <created>1625596306900</created>
@@ -74,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629121410757</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CC32">
+      <created>1629186002778</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1629186002778</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -195,4 +195,23 @@ public class HashTable<K,V> {
         return repeatedResult;
     }
     //
+
+    public ArrayList treeIntersection(BinaryTree tree1, BinaryTree tree2){
+        ArrayList intersection = new ArrayList();
+        ArrayList set1 = setTreeToArray(tree1);
+        ArrayList set2 = setTreeToArray(tree2);
+        for(Object n : set1){
+            if(set2.contains(n)){
+                intersection.add(n);
+            }
+        }
+        return intersection;
+    }
+    public static ArrayList setTreeToArray(BinaryTree bt){
+        ArrayList nodeSet = new ArrayList();
+        for(Object n : bt.preOrder()){
+            nodeSet.add(n);
+        }
+        return nodeSet;
+    }
 }
